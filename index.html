@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="css/style.css" rel="stylesheet" >
+  <meta charset="utf-8" >
+	<title>Snake Game | Kate McFaul</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1632848-19', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="content">
+
+			<div id="scores">
+				<div class="start">
+					<p class="start-game"><span class="button">New Game</span></p>
+				</div>
+				<p class="scores">Level: <span class="level">1</span> Score: <span class="score">0</span></p>
+			</div>
+
+			<div id="sidebar">
+
+				<div id="high-scores">
+					<h2>High Scores:</h2>
+					<ul>
+						<li>1.</li>
+						<li>2.</li>
+						<li>3.</li>
+						<li>4.</li>
+						<li>5.</li>
+						<li>6.</li>
+						<li>7.</li>
+						<li>8.</li>
+						<li>9.</li>
+						<li>10.</li>
+					</ul>
+				</div>
+
+				<div id="in-a-row">
+					<h2>Shrink Snake:</h2>
+					<p>Get four <span class="water">water</span> or <span class="gold">gold</span> squares in a row and snake will get smaller!</p>
+					<table>
+						<tr>
+							<td class="1"></td>
+							<td class="2"></td>
+							<td class="3"></td>
+							<td class="4"></td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="died"><p></p></div>
+				<div id="awards"><p>&nbsp;</p></div>
+
+			</div>
+
+			<div id="board"></div>
+
+			<div id="instructions">
+				<h2>Rules:</h2>
+				<p>Use arrow keys to change snake's direction.</p>
+				<p><strong>In short:</strong> Get all the colors except black.</p>
+				<h2>Details:</h2>
+				<p><span class="snake-head">Snake is green.</span> <span class="food">Food is red.</span> Eat the food. But don't eat yourself or go off the board!</p>
+				<p>Every 5th piece of food you eat levels you up! Leveling up gives you more points for each piece of food - but you also go faster, so watch out!</p>
+				<p><span class="water">Water is blue.</span> Drink the water! It gives you double points. You only get water after you level up a couple times - but hurry, it dries up after just a few seconds.</p>
+				<p>If you're extra special you'll get GOLD. <span class="gold">Get that gold!</span> It's worth TRIPLE points and slows you down a little, so it's very valuable - but it disappears fast.</p>
+				<p><span class="snake-head">Shrink Snake:</span> Get four <span class="water">water</span> or <span class="gold">gold</span> squares in a row (don't miss one!) and your snake will get shorter! A shorter snake will make it easier to navigate without eating yourself.</p>
+				<p><span class="bomb">Bombs are black.</span> Beware the bombs! Eat one and you explode. Poor snake.</p>
+				<p><span class="names">Names and scores are only stored on your browser and will erase when you close the page. Don't worry, if your kids are playing no one else will see their names.</span></p>
+			</div>
+		</div> 
+	</div> 
+</body>
+</html>
